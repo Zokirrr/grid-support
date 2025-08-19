@@ -4,7 +4,7 @@ Thanks for using **Grid** (My Life in Weeks).
 If you need help, contact me:
 
 - Email: 4kGrid@Gmail.com
-- App version: 1.0.0
+- App version: 1.2.1
 - Bundle ID: com.Zokir.mylifeinweeks
 
 ## FAQ
