@@ -3,7 +3,7 @@
 Thanks for using **Grid** (My Life in Weeks).  
 If you need help, contact me:
 
-- Email: support@yourdomain.com (or your Gmail)
+- Email: 4kGrid@Gmail.com
 - App version: 1.0.0
 - Bundle ID: com.Zokir.mylifeinweeks
 
@@ -21,4 +21,4 @@ Enable in Settings. You’ll get a weekend notification showing weeks left.
 Grid does not sell or share your data. Notes are stored on your device.  
 If you sign in with Apple, data is associated with your Apple ID.
 
-_Last updated: {{MONTH DAY, YEAR}}_
+_Last updated: {{08/19/2025}}_
