@@ -1,1 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grid — Support</title>
+  <meta name="description" content="Support page for Grid (My Life in Weeks): contact info, FAQ, and privacy." />
+  <style>
+    :root{
+      --bg:#0b0c0f; --card:#14161a; --text:#e8eaed; --muted:#b6bcc6; --accent:#4da3ff; --rule:#21242a;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#ffffff; --card:#f7f8fa; --text:#111317; --muted:#3f4550; --accent:#2563eb; --rule:#e6e8ee; }
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    .wrap{ max-width:880px; margin:0 auto; padding:32px 20px 64px; }
+    header{ margin-bottom:16px; }
+    h1{ font-size:32px; margin:0 0 8px; }
+    p.lead{ margin:0 0 16px; color:var(--muted); }
+    .card{
+      background:var(--card); border:1px solid var(--rule); border-radius:16px; padding:20px; margin:16px 0;
+    }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    dl{ display:grid; grid-template-columns:160px 1fr; gap:6px 16px; margin:0; }
+    dt{ color:var(--muted); }
+    hr{ border:0; border-top:1px solid var(--rule); margin:24px 0; }
+    h2{ font-size:22px; margin:8px 0 12px; }
+    .qa{ margin:0; padding:0; list-style:none; }
+    .qa li{ margin:0 0 8px; }
+    .q{ font-weight:700; }
+    footer{ margin-top:24px; color:var(--muted); font-size:14px; }
+    .small{ color:var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Grid — Support</h1>
+      <p class="lead">Thanks for using <strong>Grid (My Life in Weeks)</strong>. If you need help, use the contact info below or check the FAQ.</p>
+    </header>
 
+    <section class="card">
+      <h2>Contact</h2>
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:4kGrid@gmail.com">4kGrid@gmail.com</a></dd>
+
+        <dt>App version</dt>
+        <dd>1.2.1</dd>
+
+        <dt>Bundle ID</dt>
+        <dd>com.Zokir.mylifeinweeks</dd>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>FAQ</h2>
+      <ul class="qa">
+        <li>
+          <div class="q">How do I change my life expectancy?</div>
+          <div class="a">Open <strong>Settings → Life Expectancy</strong> and choose 50/60/70/80/90/100.</div>
+        </li>
+        <li>
+          <div class="q">Why can’t I proceed after opening the app?</div>
+          <div class="a">Tap <strong>“hello”</strong>, select your <strong>date of birth</strong>, then tap <strong>Continue</strong>.</div>
+        </li>
+        <li>
+          <div class="q">How do reminders work?</div>
+          <div class="a">Enable reminders in <strong>Settings</strong>. You’ll receive a weekend notification showing weeks left.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>Grid does not sell or share your data. Notes are stored on your device. If you sign in with Apple, data is associated with your Apple ID.</p>
+      <hr />
+      <footer>Last updated: <time datetime="2025-08-19">August 19, 2025</time></footer>
+    </section>
+
+    <p class="small">© <span id="year">2025</span> Grid</p>
+  </main>
+
+  <script>
+    // Optional: keep the copyright year current (not required by Apple)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
